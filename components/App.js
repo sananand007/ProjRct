@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import ReactDOM from "react-dom"
 import "./App.css"
+import TodoItem from "./TodoItem.js"
 
 /*
 class App extends Component{
@@ -15,26 +16,18 @@ class App extends Component{
 */
 
 function App() {
-	const date = new Date(2019, 12, 28, 15)
-	const hours = date.getHours()
-	let timeofDay
-	const styles = {
-		fontSize:30
-	}
-
-	if (hours < 12) {
-		timeofDay = "morning"
-		styles.color = "#04756F"
-	} else if (hours >= 12 && hours < 17) {
-		timeofDay = "afternoon"
-		styles.color = "#2E0927"
-	} else {
-		timeofDay = "night"
-		styles.color = "#D90000"
-	}
-
+    let activity
+    const styles = {
+        fontSize:30,
+	color:"#04756F"
+    }
 	return (
-		<h1 style={styles}>Good {timeofDay}!</h1>
+        <div className="todo-list">
+	<h3 style={styles}><TodoItem /></h3>
+   	<h3 style={styles}><TodoItem /></h3>
+	<h3 style={styles}><TodoItem /></h3>
+	<h3 style={styles}><TodoItem /></h3>
+        </div>
 	)
 }
 
