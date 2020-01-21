@@ -1,8 +1,8 @@
 # ProjRct
 
-Learning React through Scrimba
+Anime Wikia
 
-### For refreshing npm
+#### For refreshing npm
 
 ```
 sudo rm -rf node_modules
@@ -10,7 +10,7 @@ npm rebuid
 npm i
 ```
 
-webpack.config.js
+#### webpack.config.js
 
 ```
 const path = require("path")
